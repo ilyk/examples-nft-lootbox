@@ -72,7 +72,7 @@ contract CWLootBox is ERC1155Tradable, LootBoxData, RandomNumberConsumer, Reentr
     /**
      * @dev Unwrapping the LootBoxes
      */
-    function unwrap(uint256 tokenId, uint256 quantity) public nonReentrant {
+    function unwrap(uint256 tokenId, uint256 quantity) public {
         require(address(CWCards) != address(0), "NFT contract not set");
         ICWERC1155 _cardsContract = CWCards;
         address sender = msg.sender;
