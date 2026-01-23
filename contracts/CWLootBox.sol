@@ -8,7 +8,7 @@ import {ERC1155Tradable} from "./libs/opensea/ERC1155Tradable.sol";
 import {ICWERC1155} from "./ICWERC1155.sol";
 
 /**
- * @title LootBox 43433
+ * @title LootBox 43433542
  * LootBox - a randomized and openable lootbox of ChainWars
  */
 contract CWLootBox is ERC1155Tradable, LootBoxData, RandomNumberConsumer, ReentrancyGuard {
